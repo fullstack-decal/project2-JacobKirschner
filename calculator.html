@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Calculator</title>
-    <link rel="stylesheet" href="./calculator.css" />
-  </head>
-  <body class="total-size">
-    <div class="calc">
-      <section class="result-screen">0</section>
-      <div class="calc-rows">
-        <button class="buttons" id="zero-button">0</button>
-        <button class="buttons" id="last-buttons">=</button>
-        <button class="buttons">1</button>
-        <button class="buttons">2</button>
-        <button class="buttons">3</button>
-        <button class="buttons" id="last-buttons">+</button>
-        <button class="buttons">4</button>
-        <button class="buttons">5</button>
-        <button class="buttons">6</button>
-        <button class="buttons" id="last-buttons">-</button>
-        <button class="buttons">7</button>
-        <button class="buttons">8</button>
-        <button class="buttons">9</button>
-        <button class="buttons" id="last-buttons">x</button>
-        <button class="buttons" id="c-button">C</button>
-        <button class="buttons">←</button>
-        <button class="buttons" id="last-buttons">÷</button>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="display">
+        <div class="horizontal_sixth">
+            <p id="nums">0</p>
+            <h1 id="persist">0</h1>
+        </div>
+        <div class="horiz horizontal_sixth">
+            <div class="grey vert vertical_half"><button id="C" class="number_button">C</button></div>
+            <div class="grey vert vertical_quarter"><button id="arrow" class="number_button">←</button></div>
+            <div class="orange vert vertical_quarter"><button id="divide" class="operator_button">÷</button></div>
+        </div>
+        <div class="horiz horizontal_sixth">
+            <div class="vert vertical_quarter"><button id="7" class="number_button">7</button></div>
+            <div class="vert vertical_quarter"><button id="8" class="number_button">8</button></div>
+            <div class="vert vertical_quarter"><button id="9" class="grey number_button">9</button></div>
+            <div class="vert vertical_quarter"><button id="x" class="operator_button">x</button></div>
+        </div>
+        <div class="horiz horizontal_sixth">
+            <div class="vert vertical_quarter"><button id="4" class="number_button">4</button></div>
+            <div class="vert vertical_quarter"><button id="5" class="number_button">5</button></div>
+            <div class="vert vertical_quarter"><button id="6" class="number_button">6</button></div>
+            <div class="vert vertical_quarter"><button id="-" class="operator_button">-</button></div>
+        </div>
+        <div class="horiz horizontal_sixth">
+            <div class="vert vertical_quarter"><button id="1" class="number_button">1</button></div>
+            <div class="vert vertical_quarter"><button id="2" class="number_button">2</button></div>
+            <div class="vert vertical_quarter"><button id="3" class="number_button">3</button></div>
+            <div class="vert vertical_quarter"><button id="+" class="operator_button">+</button></div>
+        </div>
+        <div class="horiz horizontal_sixth">
+            <div class="grey vert vertical_threequarter"><button id="0" class="grey number_button">0</button></div>
+            <div class="orange vert vertical_quarter"><button  id="=" class="operator_button">=</button></div>
+        </div>
     </div>
     <script src="./calculator.js"></script>
   </body>
