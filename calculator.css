@@ -1,46 +1,98 @@
-.total-size {
-  padding: 0;
-  margin: 0;
+*{
+  background-color: none;
 }
-.result-screen {
-  height: 15%;
-  top: 50px;
-  background-color: black;
-  padding-right: 8px;
-  display: flex;
+
+.number_button {
+  border: none;
+  background-color: rgb(205, 207, 209);
+  color: black;
+  font-size: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.operator_button {
+  border: none;
+  background-color: rgb(255, 166, 0);
   color: white;
   font-size: 40px;
-  font-family: monospace;
-  justify-content: flex-end;
-  align-items: center;
+  font-weight: 200;
+  width: 100%;
+  height: 100%;
 }
-.calc {
-  width: 400px;
-  height: 500px;
+
+.display{
+  height: 600px;
+  width: 500px;
+  position: relative;
   background-color: black;
-}
-#zero-button {
-  width: 75%;
-}
+}  
 
-#c-button {
-  width: 50%;
-}
-
-.buttons {
-  width: 100px;
-  font-size: 40px;
-}
-
-.calc-rows {
+.horiz {
   display: flex;
-  flex-wrap: wrap-reverse;
-  height: 85%;
+  flex-direction: row;
+  width: 100%;
 }
-#last-buttons {
-  background-color: #df974c;
+
+.vert {
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+
+.full_flex{
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.horizontal_sixth {
+  height: 16.67%;
+  justify-content: space-between;
+  font-size: 50px;
+}
+
+.horizontal_sixth h1 {
+  color: none;
+}
+
+.horizontal_sixth p {
+  text-align: right;
   color: white;
+  font-size: 40px;
+  padding-top: 20px;
 }
-#last-buttons:hover {
-  background-color: #dfb07e;
+
+.vertical_threequarter {
+  width: 74.8%;
+  height: 99%;
+  
+}
+
+.vertical_half {
+  width: 49.8%;
+  height: 99%;
+}
+
+.vertical_quarter {
+  width: 24.8%;
+  height: 99%;
+  background-color: none;
+}
+
+.grey {
+  background-color: rgb(205, 207, 209);
+}
+
+.orange {
+  background-color: rgb(255, 166, 0);
+}
+
+.number_button:hover{
+  background-color: rgb(221, 221, 221);
+}
+
+.operator_button:hover{
+  background-color: rgb(255, 199, 96);
 }
